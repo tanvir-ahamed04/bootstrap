@@ -8,74 +8,114 @@
     <!-- bootstrap cdn link -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
          <!--bootstrap script link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- custom css--- -->
+        <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-warning">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Hire me</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-dark" type="submit">Search</button>
-            </form>
+<body>  
+  <header class="container">
+    <!-- nav var start  -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/triangle-logo.jpg" height="40px"  alt="">Ahamed Food
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#food">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#billing">Billing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#subcriber">Subcriber</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- banner--------- -->
+     <section>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active bg-success border rounded p-5">
+                  <div class="row">
+                      <div class="col-lg-7 d-flex align-items-center">
+                          <div class="capmgin">
+                              <h2>Double Decker Pizza</h2>
+                              <p>
+                                Earn 1 point for each dollar you spend at any of our (4) DDP Locations! Sign up today and get 30 bonus points just for buy! </p>
+                              <h2 >250 BDT</h2>
+                              <div class="btn btn-info sell-btn">Buy Now</div>
+                          </div>
+
+                      </div>
+                      <div class="col-lg-5">
+                        <img src="images/pizza-banner.png" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item active bg-warning border rounded p-5">
+                    <div class="row">
+                        <div class="col-lg-7 d-flex align-items-center">
+                            <div class="capmgin">
+                                <h2>Cheeseburgers double and single</h2>
+                                <p>
+                                  Earn 1 point for each dollar you spend at any of our (4) DDP Locations! Sign up today and get 30 bonus points just for buy! </p>
+                                <h2 >300 BDT</h2>
+                                <div class="btn btn-info sell-btn">Buy Now</div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-5">
+                          <img src="images/burger-banner.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item active bg-danger border rounded p-5">
+                  <div class="row">
+                      <div class="col-lg-7 d-flex align-items-center">
+                          <div class="capmgin">
+                              <h2>Free home dalivary for 30 days</h2>
+                              <p>
+                                Earn 1 point for each dollar you spend at any of our (4) DDP Locations! Sign up today and get 30 bonus points just for buy! </p>
+                              <h2 >Free</h2>
+                              <div class="btn btn-info sell-btn">Buy Now</div>
+                          </div>
+
+                      </div>
+                      <div class="col-lg-5">
+                          <img src="images/home-dalivari-banner.png" class="d-block  img-deliver" alt="...">
+                      </div>
+                  </div>
+
+              </div>
+
           </div>
-        </div>
-      </nav>
-    <!-- end nav var ------------------- -->
-   <!-- start slide picture------- -->
-   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="images/pic1.JPG" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="images/pic2.jpeg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/pic3.jpeg" class="d-block w-100" alt="...">
-  <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-   
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </header>
 </body>
 </html>
